@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>3D Survival Game</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Survival Game</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/PointerLockControls.js"></script>
 </head>
 <body>
-    <!-- HUD -->
-    <div id="hud">
-        <div class="stat">Health: <span id="health">100</span></div>
-        <div class="stat">Energy: <span id="energy">100</span></div>
-        <div class="stat">Hunger: <span id="hunger">100</span></div>
-        <div class="stat">Thirst: <span id="thirst">100</span></div>
-        <div class="stat">Wood: <span id="wood">0</span></div>
-        <div class="stat">Metal: <span id="metal">0</span></div>
-        <div class="stat">Food: <span id="food">0</span></div>
-        <div class="stat">Water: <span id="water">0</span></div>
-        <div class="stat">Day: <span id="day">1</span></div>
-    </div>
-
-    <!-- Messages Log -->
-    <div id="messages"></div>
-
-    <!-- Game Canvas -->
-    <canvas id="gameCanvas"></canvas>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/controls/PointerLockControls.js"></script>
-    <script src="script.js"></script>
+<canvas id="gameCanvas"></canvas>
+<div id="hud">
+    <div>Health: <span id="health">100</span></div>
+    <div>Energy: <span id="energy">100</span></div>
+    <div>Hunger: <span id="hunger">100</span></div>
+    <div>Thirst: <span id="thirst">100</span></div>
+    <div>Wood: <span id="wood">0</span></div>
+    <div>Metal: <span id="metal">0</span></div>
+    <div>Food: <span id="food">0</span></div>
+    <div>Water: <span id="water">0</span></div>
+    <div>Day: <span id="day">1</span></div>
+</div>
+<div id="messages"></div>
+<script src="script.js"></script>
 </body>
 </html>
