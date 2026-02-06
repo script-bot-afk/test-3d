@@ -1,50 +1,23 @@
-/* Reset body and remove margin */
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Make the canvas fill the entire window */
-#gameCanvas {
-    display: block;
-    width: 100vw;
-    height: 100vh;
+/* Fullscreen page */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #111; /* dark background for 3D */
+  font-family: Arial, sans-serif;
 }
 
-/* HUD styling */
-#hud {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: rgba(0,0,0,0.3);
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.hud-item {
-    margin-bottom: 4px;
-}
-
-/* Messages log styling */
-#messages {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 300px;
-    max-height: 40vh;
-    overflow-y: auto;
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 8px;
-}
-
-#messages p {
-    margin: 2px 0;
+/* Fullscreen container for Three.js */
+#game-container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
 }
