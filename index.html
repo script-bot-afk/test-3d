@@ -1,35 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>3D Survival Game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Survival Game</title>
+
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" href="goon.css">
+
+  <!-- Three.js library from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
 </head>
 <body>
-    <!-- Canvas for Three.js -->
-    <canvas id="gameCanvas"></canvas>
+  <!-- Container for the 3D game -->
+  <div id="game-container"></div>
 
-    <!-- HUD -->
-    <div id="hud">
-        <div class="hud-item">Health: <span id="health">100</span></div>
-        <div class="hud-item">Energy: <span id="energy">100</span></div>
-        <div class="hud-item">Hunger: <span id="hunger">100</span></div>
-        <div class="hud-item">Thirst: <span id="thirst">100</span></div>
-        <div class="hud-item">Wood: <span id="wood">0</span></div>
-        <div class="hud-item">Metal: <span id="metal">0</span></div>
-        <div class="hud-item">Food: <span id="food">0</span></div>
-        <div class="hud-item">Water: <span id="water">0</span></div>
-        <div class="hud-item">Day: <span id="day">1</span></div>
-    </div>
-
-    <!-- Messages -->
-    <div id="messages"></div>
-
-    <!-- Three.js Library -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/PointerLockControls.js"></script>
-
-    <!-- Game Script -->
-    <script src="script.js"></script>
+  <!-- Your JS -->
+  <script src="script.js"></script>
 </body>
 </html>
